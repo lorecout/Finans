@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Backup do projeto Finans",
+			"type": "shell",
+			"command": "powershell Compress-Archive -Path .\\* -DestinationPath ..\\Finans-backup.zip -Force",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
