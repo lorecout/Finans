@@ -8,6 +8,11 @@
 			"args": [],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Gerar APK release",
+			"type": "shell",
+			"command": "flutter build apk --release"
 		}
 	]
 }
