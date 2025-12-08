@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinWise - Gestão Financeira Inteligente</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .download-badge {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .download-badge img {
+            height: 60px;
+            transition: transform 0.3s;
+        }
+        
+        .download-badge img:hover {
+            transform: scale(1.05);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 20px 20px;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.9;
+        }
+        
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .main-content {
+                padding: 20px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 FinWise</h1>
+            <p class="tagline">Gestão Financeira Inteligente para Seu Dia a Dia</p>
+        </header>
+
+        <div class="main-content">
+            <div class="download-badge">
+                <a href="https://play.google.com/store/apps/details?id=com.example.finwise" target="_blank">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/pt-br_badge_web_generic.png" 
+                         alt="Disponível no Google Play">
+                </a>
+            </div>
+
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 30px;">
+                Principais Recursos
+            </h2>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Controle Total</h3>
+                    <p>Acompanhe todas as suas receitas e despesas em tempo real</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">💳</div>
+                    <h3>Categorização</h3>
+                    <p>Organize seus gastos em categorias personalizadas</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📈</div>
+                    <h3>Relatórios</h3>
+                    <p>Visualize gráficos e estatísticas dos seus hábitos financeiros</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Metas</h3>
+                    <p>Defina e acompanhe suas metas de economia</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Lembretes</h3>
+                    <p>Nunca esqueça de pagar uma conta importante</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Segurança</h3>
+                    <p>Seus dados protegidos com criptografia de ponta</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; padding: 30px; background: #f8f9fa; border-radius: 10px;">
+                <h3 style="color: #667eea; margin-bottom: 15px;">Comece Agora!</h3>
+                <p style="font-size: 1.1em; margin-bottom: 20px;">
+                    Baixe gratuitamente e tome o controle das suas finanças hoje mesmo.
+                </p>
+                <a href="https://play.google.com/store/apps/details?id=com.example.finwise" 
+                   target="_blank"
+                   style="display: inline-block; background: #667eea; color: white; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: background 0.3s;">
+                    Baixar Agora
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <div style="margin-bottom: 20px;">
+                <a href="privacy.html">Política de Privacidade</a>
+                <a href="terms.html">Termos de Uso</a>
+                <a href="mailto:suporte@finwise.app">Suporte</a>
+            </div>
+            <p>&copy; 2025 FinWise. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
